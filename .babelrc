@@ -1,0 +1,63 @@
+{
+  "comments": false,
+  "env": {
+    "dev": {
+      "presets": [
+        ["@babel/env", {
+          "targets": { "browsers": ["> 1%", "last 2 versions", "not ie <= 8"] },
+          "useBuiltIns": "usage",
+          "corejs": 3,
+          "loose": true
+        }],
+        "@babel/react",
+        "@babel/typescript"
+      ],
+      "plugins": [
+        ["import", { "libraryName": "antd", "style": "css" }, "antd"],
+        ["import", { "libraryName": "lodash-es", "libraryDirectory": "", "camel2DashComponentName": false }, "lodash-es"],
+        "dynamic-import-node",
+        "@babel/plugin-transform-runtime",
+        "@babel/plugin-transform-arrow-functions",
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-syntax-import-meta",
+        "@babel/plugin-proposal-function-bind",
+        "@babel/plugin-proposal-json-strings",
+        "@babel/plugin-proposal-do-expressions",
+        "@babel/plugin-proposal-nullish-coalescing-operator",
+        "@babel/plugin-proposal-optional-chaining",
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        ["@babel/plugin-proposal-private-methods", { "loose": true }]
+      ]
+    },
+    "pro": {
+      "presets": [
+        ["@babel/env", {
+          "targets": { "browsers": ["> 1%", "last 2 versions", "not ie <= 8"] },
+          "useBuiltIns": "usage",
+          "corejs": 3,
+          "loose": true
+        }],
+        "@babel/react",
+        "@babel/typescript"
+      ],
+      "plugins": [
+        ["import", { "libraryName": "antd", "style": "css" }, "antd"],
+        ["import", { "libraryName": "lodash-es", "libraryDirectory": "", "camel2DashComponentName": false }, "lodash-es"],
+        "dynamic-import-node",
+        "@babel/plugin-transform-runtime",
+        "@babel/plugin-transform-arrow-functions",
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-syntax-import-meta",
+        "@babel/plugin-proposal-function-bind",
+        "@babel/plugin-proposal-json-strings",
+        "@babel/plugin-proposal-do-expressions",
+        "@babel/plugin-proposal-nullish-coalescing-operator",
+        "@babel/plugin-proposal-optional-chaining",
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        ["@babel/plugin-proposal-private-methods", { "loose": true }]
+      ]
+    }
+  }
+}
