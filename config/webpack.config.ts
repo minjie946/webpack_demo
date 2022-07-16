@@ -2,7 +2,7 @@
  * @description 配置文件
  * @author minjie
  * @Date 2021-11-02 14:22
- * @LastEditTime 2021-12-23 11:21
+ * @LastEditTime 2022-01-11 16:32
  * @LastEditors minjie
  * @copyright Copyright © 2021 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
  */
@@ -23,10 +23,12 @@ interface ConfigInfo extends webpack.Configuration {
   /** 环境的变量 */
   definePlugin: any
 }
-
+// 项目名称
 const project:string = 'css'
+// 启动地址
 const host:string = os.platform() === 'darwin' ? '0.0.0.0' : '127.0.0.1'
-const port:number = 2101
+// 启动端口号
+const port:number = 2201
 
 /** webpack-dev-server 配置 */
 export const devServerConfig:Configuration = {

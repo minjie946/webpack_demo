@@ -2,7 +2,7 @@
  * @description 公共的配置
  * @author minjie
  * @Date 2021-12-20 13:14
- * @LastEditTime 2022-01-11 15:29
+ * @LastEditTime 2022-05-12 15:03
  * @LastEditors minjie
  * @copyright Copyright © 2021 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
  */
@@ -109,6 +109,9 @@ export const ConfigCommon = ({ mode, target }: Configuration): Configuration => 
       ]
     },
     resolve: {
+      alias: {
+        '@assets': resolve('src/assets'),
+      },
       extensions: ['.ts', '.tsx', '.js', '.less', '.css']
     }
   }
